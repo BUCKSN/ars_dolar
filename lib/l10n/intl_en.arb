@@ -1,0 +1,12 @@
+{
+    "error": "Error",
+    "error_message": "Error, server or data not found!",
+    "unknown_error": "Something worng!",
+    "amount_receivable": "Receivable:",
+    "dollar_blue": "Dollar blue",
+    "dollar_oficial": "Dollar oficial",
+    "dollar_purse": "Dollar purse",
+    "counted_with_liquid": "Counted with liquid",
+    "crypto_dollar": "Crypto dollar",
+    "tourist_dollar": "Tourist Dollar"
+}

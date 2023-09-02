@@ -1,0 +1,12 @@
+{
+    "error": "Ошибка",
+    "error_message": "Ошибка, cервер или данные недоступены!",
+    "unknown_error": "Нечто неведомое случилось!",
+    "amount_receivable": "К получению:",
+    "dollar_blue": "Доллар блю",
+    "dollar_oficial": "Доллар официальный",
+    "dollar_purse": "Доллар purse",
+    "counted_with_liquid": "Counted with liquid",
+    "crypto_dollar": "Доллар крипто(USDT)",
+    "tourist_dollar": "Доллар Туристический"
+}
