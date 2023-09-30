@@ -20,10 +20,10 @@ final kDarkTheme = ThemeData.dark().copyWith(
     primaryColor: AppColors.green,
     appBarTheme: const AppBarTheme(
         surfaceTintColor: AppColors.transparent, //color of appbar then scroll
-        elevation: 0.3,
+        elevation: 0.5,
         shadowColor: AppColors.lgrey,
-        backgroundColor: AppColors.black,
-        foregroundColor: AppColors.black,
+        backgroundColor: AppColors.grey,
+        // foregroundColor: AppColors.grey,
         iconTheme: IconThemeData(color: AppColors.green)));
 
 final kLightTheme = ThemeData.light().copyWith(
@@ -46,9 +46,9 @@ final kLightTheme = ThemeData.light().copyWith(
     primaryColor: AppColors.green,
     appBarTheme: const AppBarTheme(
         surfaceTintColor: AppColors.transparent, //color of appbar then scroll
-        elevation: 0.3,
+        elevation: 0.5,
         // если убрать цвет тени то будут артефакты при смене темы
         shadowColor: AppColors.lgrey,
-        backgroundColor: AppColors.grey,
-        foregroundColor: AppColors.grey,
+        backgroundColor: AppColors.white,
+        // foregroundColor: AppColors.grey,
         iconTheme: IconThemeData(color: AppColors.green)));

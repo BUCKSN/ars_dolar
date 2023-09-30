@@ -5,9 +5,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'blocks/rates/dolar_bloc.dart';
 import 'generated/l10n.dart';
-// import 'repository/dolarsi_repository.dart';
 import 'repository/dolarhoy_repository.dart';
-import 'screens/app_screen.dart';
+import 'screens/main_screen/main_screen.dart';
 import 'theme/theme_rates.dart';
 
 void main() {
@@ -15,16 +14,28 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    // bool isDarkTheme =
+    // // Получите текущую тему устройства
+    // final Brightness brightness = MediaQuery.of(context).platformBrightness;
+
+    // // Определите тему вашего приложения на основе полученного значения
+    // final AdaptiveThemeMode kDeviceTheme = brightness == Brightness.dark
+    //     ? AdaptiveThemeMode.dark
+    //     : AdaptiveThemeMode.light;
+
+    // final bool isDarkTheme =
     //     MediaQuery.of(context).platformBrightness == Brightness.dark;
+    final bool isDarkTheme =
+        MediaQuery.platformBrightnessOf(context) == Brightness.dark;
     return AdaptiveTheme(
         light: kLightTheme,
         dark: kDarkTheme,
-        initial: AdaptiveThemeMode.light,
+        initial: isDarkTheme ? AdaptiveThemeMode.dark : AdaptiveThemeMode.light,
         builder: (theme, darkTheme) => MaterialApp(
                 localizationsDelegates: const [
                   S.delegate,
